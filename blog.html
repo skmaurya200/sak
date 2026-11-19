@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Blog — SAK Digital Media Services</title>
+    <meta name="description" content="Practical articles on content, websites and data for small businesses.">
+    <meta name="theme-color" content="#0c202c">
+    <link rel="icon"
+        href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230c202c'/%3E%3Ctext x='32' y='45' font-size='34' font-weight='800' text-anchor='middle' fill='%23b7f0d7' font-family='Arial'%3ES%3C/text%3E%3C/svg%3E">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,700;12..96,800&family=DM+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body data-page="blog">
+    <div class="bar"></div>
+    <div class="glow"></div>
+
+    <header class="fixed-top pt-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg nb px-3 px-lg-4" aria-label="Main">
+                <a class="brand" href="index.html">SAK.<small>Digital Media Services</small></a>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nl" aria-controls="nl"
+                    aria-expanded="false" aria-label="Open menu"><i class="bi bi-list"></i></button>
+                <div class="collapse navbar-collapse" id="nl">
+                    <ul class="navbar-nav mx-auto gap-lg-3">
+                        <li class="nav-item"><a class="nav-link" data-page="home" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" data-page="about" href="about.html">About</a></li>
+                        <li class="nav-item"><a class="nav-link" data-page="services" href="services.html">Services</a></li>
+                        <li class="nav-item"><a class="nav-link" data-page="testimonial" href="testimonial.html">Testimonial</a></li>
+                        <li class="nav-item"><a class="nav-link" data-page="blog" href="blog.html">Blog</a></li>
+                        <li class="nav-item"><a class="nav-link" data-page="contact" href="contact.html">Contact</a></li>
+                    </ul>
+                    <a class="btn-sak mag" href="contact.html">Let's talk <i class="bi bi-arrow-up-right"></i></a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="ph">
+            <div class="orb o1"></div>
+            <div class="gb"></div>
+            <div class="container">
+                <ol class="crumb" data-h>
+                    <li><a href="index.html">Home</a></li>
+                    <li aria-hidden="true">/</li>
+                    <li aria-current="page">Blog</li>
+                </ol>
+                <h1><span class="ln"><span>Ideas, tips &amp;</span></span><span class="ln"><span>digital know-how.</span></span></h1>
+                <p class="lead" data-h>Practical articles on content, websites and data — written for busy business
+                    owners.</p>
+            </div>
+        </section>
+
+        <!-- FEATURED POST (rendered from assets/js/posts.js) -->
+        <section class="sec pb-0">
+            <div class="container">
+                <div id="blog-feat" data-r></div>
+            </div>
+        </section>
+
+        <!-- ALL POSTS -->
+        <section class="sec">
+            <div class="container">
+                <div class="row align-items-end g-4">
+                    <div class="col-lg-7">
+                        <span class="eyebrow">All articles</span>
+                        <h2>Browse by topic.</h2>
+                    </div>
+                    <div class="col-lg-5">
+                        <p class="mut mb-0">Filter articles by the area you're most interested in.</p>
+                    </div>
+                </div>
+                <div class="fl" role="group" aria-label="Filter articles">
+                    <button aria-pressed="true" data-f="All">All articles</button>
+                    <button aria-pressed="false" data-f="Content">Content &amp; marketing</button>
+                    <button aria-pressed="false" data-f="Web">Web &amp; apps</button>
+                    <button aria-pressed="false" data-f="Data">Data solutions</button>
+                </div>
+                <div class="row g-4" id="blog-grid"></div>
+            </div>
+        </section>
+
+        <!-- TOPICS -->
+        <section class="sec dk">
+            <div class="container">
+                <span class="eyebrow">What we write about</span>
+                <h2 class="mb-5">Three topics.<br>Real-world advice.</h2>
+                <div class="row g-4">
+                    <div class="col-md-4" data-r>
+                        <div class="pl"><i class="bi bi-pencil-square"></i>
+                            <h3>Content &amp; marketing</h3>
+                            <p>Blogging, social media planning and writing that connects with customers.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-r>
+                        <div class="pl"><i class="bi bi-window-desktop"></i>
+                            <h3>Web &amp; apps</h3>
+                            <p>Website checklists, design tips and making sites work on every device.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4" data-r>
+                        <div class="pl"><i class="bi bi-bar-chart-line"></i>
+                            <h3>Data solutions</h3>
+                            <p>Cleaning, organising and using your business data to make better decisions.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NEWSLETTER -->
+        <section class="sec">
+            <div class="container">
+                <div class="nl" data-r>
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <span class="eyebrow">Newsletter</span>
+                            <h2 class="mb-3">Get new articles<br>in your inbox.</h2>
+                            <p class="mb-0">One short email when we publish something useful. No spam — unsubscribe
+                                any time.</p>
+                        </div>
+                        <div class="col-lg-6">
+                            <form data-newsletter novalidate>
+                                <label class="visually-hidden" for="nl-email">Email address</label>
+                                <input id="nl-email" type="email" name="email" required autocomplete="email"
+                                    placeholder="Your email address">
+                                <button class="btn-sak" type="submit">Subscribe <i class="bi bi-send"></i></button>
+                            </form>
+                            <p class="small mt-3 mb-0" data-nl-msg role="status" aria-live="polite"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="ft">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-5">
+                    <a class="brand" href="index.html">SAK.<small>Digital Media Services</small></a>
+                    <p>Dubai, United Arab Emirates</p>
+                    <a href="tel:+971501517195"><i class="bi bi-telephone me-2"></i>+971 50 151 7195</a>
+                    <a href="tel:+17273775467"><i class="bi bi-telephone me-2"></i>+1 727-377-5467</a>
+                    <a href="mailto:support@sakdigitalmediaservice.com"><i
+                            class="bi bi-envelope me-2"></i>support@sakdigitalmediaservice.com</a>
+                </div>
+                <div class="col-6 col-lg-3 offset-lg-1">
+                    <h4>Explore</h4><a href="index.html">Home</a><a href="about.html">About</a><a
+                        href="services.html">Services</a><a href="testimonial.html">Testimonial</a><a href="blog.html">Blog</a><a
+                        href="contact.html">Contact</a>
+                </div>
+                <div class="col-6 col-lg-3">
+                    <h4>Information</h4><a href="privacy-policy.html">Privacy
+                        Policy</a><a href="terms-conditions.html">Terms &amp;
+                        Conditions</a><a href="contact.html">Contact &amp; SMS preferences</a>
+                </div>
+            </div>
+            <div class="cp">© <span data-year>2026</span> SAK Digital Media Services. All rights reserved.</div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="assets/js/posts.js"></script>
+    <script src="assets/js/blog.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
